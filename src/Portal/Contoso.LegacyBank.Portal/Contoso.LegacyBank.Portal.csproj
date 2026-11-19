@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>Contoso.LegacyBank.Portal</RootNamespace>
+    <AssemblyName>Contoso.LegacyBank.Portal</AssemblyName>
+    <LangVersion>7.3</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Accounts\Contoso.LegacyBank.Accounts.Contracts\Contoso.LegacyBank.Accounts.Contracts.csproj" />
+    <ProjectReference Include="..\..\Loans\Contoso.LegacyBank.Loans.Contracts\Contoso.LegacyBank.Loans.Contracts.csproj" />
+    <ProjectReference Include="..\..\Shared\Contoso.LegacyBank.Shared\Contoso.LegacyBank.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
