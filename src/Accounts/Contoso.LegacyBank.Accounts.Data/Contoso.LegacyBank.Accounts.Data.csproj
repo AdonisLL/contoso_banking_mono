@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Contoso.LegacyBank.Accounts.Data</RootNamespace>
+    <AssemblyName>Contoso.LegacyBank.Accounts.Data</AssemblyName>
+    <LangVersion>7.3</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contoso.LegacyBank.Accounts.Contracts\Contoso.LegacyBank.Accounts.Contracts.csproj" />
+    <ProjectReference Include="..\..\Shared\Contoso.LegacyBank.Shared\Contoso.LegacyBank.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

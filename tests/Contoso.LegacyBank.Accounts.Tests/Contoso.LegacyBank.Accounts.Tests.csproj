@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Contoso.LegacyBank.Accounts.Tests</RootNamespace>
+    <AssemblyName>Contoso.LegacyBank.Accounts.Tests</AssemblyName>
+    <LangVersion>7.3</LangVersion>
+    <IsPackable>false</IsPackable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.6.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Accounts\Contoso.LegacyBank.Accounts.Contracts\Contoso.LegacyBank.Accounts.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\Accounts\Contoso.LegacyBank.Accounts.Data\Contoso.LegacyBank.Accounts.Data.csproj" />
+    <ProjectReference Include="..\..\src\Accounts\Contoso.LegacyBank.Accounts.Business\Contoso.LegacyBank.Accounts.Business.csproj" />
+    <ProjectReference Include="..\..\src\Shared\Contoso.LegacyBank.Shared\Contoso.LegacyBank.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
